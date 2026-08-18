@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bylel Longelin — QA Automation Tester</title>
+<meta name="description" content="Portfolio de Bylel Longelin, testeur automaticien / QA Automation. Cypress, Playwright, Robot Framework, CI/CD.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo">bylel<span class="dim">.spec</span><span class="cursor-blink">_</span></a>
+    <nav class="nav__links">
+      <a href="#experience"><span class="dim">01_</span>expérience</a>
+      <a href="#skills"><span class="dim">02_</span>compétences</a>
+      <a href="#education"><span class="dim">03_</span>formation</a>
+      <a href="#projects"><span class="dim">04_</span>projets</a>
+      <a href="#contact"><span class="dim">05_</span>contact</a>
+    </nav>
+    <a class="nav__cta" href="assets/CV_Bylel_Longelin.pdf" target="_blank" rel="noopener">CV.pdf ↓</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__inner">
+      <div class="terminal" id="terminal">
+        <div class="terminal__bar">
+          <div class="terminal__dots"><span></span><span></span><span></span></div>
+          <span class="terminal__title">zsh — run-profile.sh</span>
+        </div>
+        <div class="terminal__body" id="terminal-body">
+          <p class="line l1"><span class="prompt">➜</span> <span class="cmd">npx run-profile --candidate bylel-longelin</span></p>
+          <p class="line l2"><span class="out">Chargement du profil bylel-longelin.json…</span></p>
+          <p class="line l3 assert-pass">BUT Informatique — IUT de Lens</p>
+          <p class="line l4 assert-pass">1 an d'alternance QA chez Worldline</p>
+          <p class="line l5 assert-pass">Nombreux tests E2E automatisés (Cypress)</p>
+          <p class="line l6 assert-pass">17 000+ contrôles RGAA exécutés</p>
+          <p class="line l7 assert-info">Montée en compétences sur Playwright…</p>
+          <p class="line l8 assert-info">Préparation ISTQB Foundation…</p>
+          <p class="line l9"><span class="summary"><span class="n-pass">6 passed</span> · 0 failed · profil prêt à l'embauche</span></p>
+        </div>
+      </div>
+
+      <div class="hero__identity" id="hero-identity">
+        <div class="id-badge">
+          <img src="assets/photo.jpg" alt="Photo de Bylel Longelin" class="id-badge__photo">
+          <span class="id-badge__tag">bylel_longelin.jpg <span class="dim">— loaded</span></span>
+        </div>
+        <p class="eyebrow">Portfolio · Testeur Automaticien</p>
+        <h1 class="hero__name">Bylel<br>Longelin</h1>
+        <p class="hero__role">QA Automation <span class="dim">/</span> Tests End-to-End <span class="dim">/</span> RGAA</p>
+        <p class="hero__bio">
+          Testeur QA Automation issu d'un BUT Informatique. Une expérience d'un an en alternance
+          chez <strong>Worldline</strong> m'a permis de concevoir et d'automatiser des suites de tests
+          End-to-End avec Cypress et Robot Framework, intégrées aux pipelines CI/CD. À l'aise en C#,
+          Python et Java, je privilégie des outils et des tests maintenables plutôt que des scripts
+          jetables. Je monte actuellement en compétences sur Playwright et prépare la certification
+          ISTQB Foundation.
+        </p>
+        <div class="hero__tags">
+          <span class="tag tag--pass">Cypress</span>
+          <span class="tag tag--info">Playwright</span>
+          <span class="tag tag--warn">Robot Framework</span>
+          <span class="tag">CI/CD</span>
+          <span class="tag">RGAA</span>
+        </div>
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Me contacter</a>
+          <a href="assets/CV_Bylel_Longelin.pdf" target="_blank" rel="noopener" class="btn btn--ghost">Télécharger le CV</a>
+        </div>
+        <div class="hero__meta">
+          <span>📍 Arras — mobile Paris &amp; Hauts-de-France</span>
+          <span class="dot">•</span>
+          <span class="status-dot"></span> <span>Disponible immédiatement</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="stats-strip" id="stats-strip">
+      <div class="stat"><span class="stat__num">200+</span><span class="stat__label">tests E2E automatisés</span></div>
+      <div class="stat"><span class="stat__num">17 000+</span><span class="stat__label">contrôles d'accessibilité exécutés</span></div>
+      <div class="stat"><span class="stat__num">80+</span><span class="stat__label">anomalies détectées avant prod</span></div>
+      <div class="stat"><span class="stat__num">5</span><span class="stat__label">audits RGAA clients menés</span></div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section__head">
+      <p class="describe">describe(<span class="str">'Expérience professionnelle'</span>, () =&gt; {</p>
+      <h2>Expérience</h2>
+    </div>
+
+    <div class="cases">
+      <article class="case">
+        <div class="case__status case__status--running">
+          <span class="badge badge--info">RUNNING</span>
+          <span class="case__duration">sept. 2025 → juil. 2026</span>
+        </div>
+        <h3 class="case__title">it(<span class="str">'travaille comme QA Automation Tester Alternant'</span>)</h3>
+        <p class="case__org">Equens Worldline · Seclin</p>
+        <ul class="case__list">
+          <li>Conception et maintenance d'une suite de <strong>nombreux tests End-to-End</strong> automatisés avec Cypress / JavaScript, exécutée à chaque build via <strong>GitLab CI/CD</strong>.</li>
+          <li>Mise en place de tests fonctionnels et de non-régression, détectant <strong>80 anomalies</strong> avant leur mise en production.</li>
+          <li>Audits d'accessibilité <strong>RGAA sur 5 clients</strong>, une soixantaine de pages et parcours, contrôles automatisés + vérifications manuelles.</li>
+          <li>Exécution de plus de <strong>17 000 contrôles d'accessibilité</strong> et identification des défauts à corriger.</li>
+          <li>Formation de membres de l'équipe QA aux critères RGAA et aux outils d'audit.</li>
+          <li>Suivi des anomalies et des campagnes de test dans un environnement <strong>Agile / Scrum</strong>.</li>
+        </ul>
+      </article>
+
+      <article class="case">
+        <div class="case__status case__status--pass">
+          <span class="badge badge--pass">PASSED</span>
+          <span class="case__duration">avr. 2025 → juin 2025</span>
+        </div>
+        <h3 class="case__title">it(<span class="str">'a développé en tant que Développeur Back-end'</span>)</h3>
+        <p class="case__org">Cafeyn Group · Paris</p>
+        <ul class="case__list">
+          <li>Développement d'outils internes en <strong>C# et Python</strong> pour automatiser la détection et l'analyse d'anomalies sur les comptes d'environ <strong>500 clients</strong>.</li>
+          <li>Conception de traitements automatisés : appels API, requêtes SQL et traitements batch, pour réduire les interventions manuelles.</li>
+          <li>Identification et correction d'anomalies en amont, réduisant le volume de tickets Customer Care.</li>
+          <li>Simplification et automatisation de processus internes pour accélérer le traitement des demandes.</li>
+        </ul>
+      </article>
+    </div>
+    <p class="describe describe--close">})</p>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section--alt" id="skills">
+    <div class="section__head">
+      <p class="describe">describe(<span class="str">'Compétences'</span>, () =&gt; {</p>
+      <h2>Compétences</h2>
+    </div>
+
+    <div class="skill-grid">
+      <div class="skill-group">
+        <h3>Tests &amp; Qualité</h3>
+        <div class="chips">
+          <span class="chip">Robot Framework</span>
+          <span class="chip">Cypress</span>
+          <span class="chip">Playwright</span>
+          <span class="chip">RGAA</span>
+          <span class="chip">CI/CD</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Langages</h3>
+        <div class="chips">
+          <span class="chip">C#</span>
+          <span class="chip">Java</span>
+          <span class="chip">Python</span>
+          <span class="chip">TypeScript</span>
+          <span class="chip">PHP</span>
+          <span class="chip">SQL</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Frameworks</h3>
+        <div class="chips">
+          <span class="chip">Laravel</span>
+          <span class="chip">React</span>
+          <span class="chip">Spring</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Outils</h3>
+        <div class="chips">
+          <span class="chip">Bruno</span>
+          <span class="chip">Postman</span>
+          <span class="chip">Confluence</span>
+          <span class="chip">Jira</span>
+          <span class="chip">Git</span>
+          <span class="chip">Suite IntelliJ</span>
+          <span class="chip">VSCode</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h3>Langues</h3>
+        <div class="chips">
+          <span class="chip">Français — natif</span>
+          <span class="chip">Anglais — B2 · TOEIC 855</span>
+        </div>
+      </div>
+    </div>
+    <p class="describe describe--close">})</p>
+  </section>
+
+  <!-- EDUCATION + CERTIFICATIONS -->
+  <section class="section" id="education">
+    <div class="section__head">
+      <p class="describe">describe(<span class="str">'Formation &amp; certifications'</span>, () =&gt; {</p>
+      <h2>Formation</h2>
+    </div>
+
+    <div class="timeline">
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__top">
+            <h3>BUT Informatique</h3>
+            <span class="timeline__date">sept. 2023 — juil. 2026</span>
+          </div>
+          <p class="timeline__org">IUT de Lens</p>
+          <p class="timeline__desc">Qualité de développement et bonnes pratiques de tests, automatisation des processus et scripts, virtualisation / conteneurisation (Docker, Podman), pipelines CI/CD, développement Java / Python / TypeScript / React.</p>
+        </div>
+      </div>
+      <div class="timeline__item">
+        <div class="timeline__marker"></div>
+        <div class="timeline__content">
+          <div class="timeline__top">
+            <h3>Baccalauréat Général</h3>
+            <span class="timeline__date">sept. 2020 — juil. 2023</span>
+          </div>
+          <p class="timeline__org">Lycée Guy Mollet · Arras</p>
+          <p class="timeline__desc">Spécialités Mathématiques, Numérique et Sciences Informatiques, Anglais.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="certs">
+      <h3 class="certs__title">Certifications</h3>
+      <div class="chips">
+        <span class="chip chip--cert">✓ TOEIC Anglais — 855/990 (B2)</span>
+        <span class="chip chip--cert">✓ Udemy — React, Selenium, Sécurité</span>
+        <span class="chip chip--cert">✓ Udemy — Robot Framework, Playwright &amp; RGAA</span>
+      </div>
+    </div>
+    <p class="describe describe--close">})</p>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section--alt" id="projects">
+    <div class="section__head">
+      <p class="describe">describe(<span class="str">'Projets universitaires'</span>, () =&gt; {</p>
+      <h2>Projets</h2>
+    </div>
+
+    <div class="project-grid">
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="badge badge--pass">PASSED</span>
+          <span class="project-card__date">Marathon du Web · 2025</span>
+        </div>
+        <h3>Site voyage en 36h non-stop</h3>
+        <p>Conception et développement d'un site web autour du thème du voyage, dans le cadre d'un challenge réunissant des étudiants en informatique et en MMI de Lens. Travail en équipe de 7 à 9 étudiants avec répartition des rôles, coordination des tâches et développement sous forte contrainte de temps.</p>
+      </article>
+
+      <article class="project-card">
+        <div class="project-card__head">
+          <span class="badge badge--pass">PASSED</span>
+          <span class="project-card__date">AI Racing · 2026</span>
+        </div>
+        <h3>IA de pilotage de voiture virtuelle</h3>
+        <p>Développement d'une IA capable de piloter une voiture virtuelle et d'apprendre progressivement un circuit. Mise en place d'un système d'apprentissage et d'optimisation des paramètres de conduite, ajustés automatiquement à partir des résultats de simulation pour minimiser le temps au tour.</p>
+      </article>
+    </div>
+    <p class="describe describe--close">})</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section__head">
+      <p class="describe">describe(<span class="str">'Contact'</span>, () =&gt; {</p>
+      <h2>Travaillons ensemble</h2>
+    </div>
+
+    <div class="assertion">
+      <p><span class="dim">expect(</span>bylel.disponibilite<span class="dim">).</span>toBe<span class="dim">(</span><span class="str">'immédiate'</span><span class="dim">)</span> <span class="badge badge--pass">✓</span></p>
+    </div>
+
+    <div class="contact-grid">
+      <a href="mailto:bylel.lgln@gmail.com" class="contact-card">
+        <span class="contact-card__label">Email</span>
+        <span class="contact-card__value">bylel.lgln@gmail.com</span>
+      </a>
+      <div class="contact-card contact-card--static">
+        <span class="contact-card__label">Localisation</span>
+        <span class="contact-card__value">Arras (62) — mobile Paris &amp; Hauts-de-France</span>
+      </div>
+    </div>
+    <p class="describe describe--close">})</p>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>© 2026 Bylel Longelin <span class="dim">— build passing</span> <span class="badge badge--pass badge--sm">✓</span></p>
+</footer>
+
+</body>
+</html>
