@@ -10,6 +10,6 @@ test('Accessibility switch is not checked by default', async ({ page }) => {
 });
 
 test('Accessibility switch is working', async ({ page }) => {
-    await page.locator('.a11y-toggle').check()
+    await page.locator('.a11y-toggle').click()
     await expect(page.getByRole('checkbox', { name: /Activer le mode accessible/ })).toBeChecked();
 });
