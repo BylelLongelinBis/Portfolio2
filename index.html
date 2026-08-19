@@ -12,19 +12,30 @@
 </head>
 <body>
 
-<div class="grain"></div>
+<a href="#top" class="skip-link">Aller au contenu principal</a>
+
+<div class="grain" aria-hidden="true"></div>
 
 <header class="nav" id="nav">
   <div class="nav__inner">
-    <a href="#top" class="nav__logo">bylel<span class="dim">.spec</span><span class="cursor-blink">_</span></a>
-    <nav class="nav__links">
+    <a href="#top" class="nav__logo">bylel<span class="dim">.spec</span><span class="cursor-blink" aria-hidden="true">_</span></a>
+    <nav class="nav__links" aria-label="Navigation principale">
       <a href="#experience"><span class="dim">01_</span>expérience</a>
       <a href="#skills"><span class="dim">02_</span>compétences</a>
       <a href="#education"><span class="dim">03_</span>formation</a>
       <a href="#projects"><span class="dim">04_</span>projets</a>
       <a href="#contact"><span class="dim">05_</span>contact</a>
     </nav>
-    <a class="nav__cta" href="assets/CV_Bylel_Longelin.pdf" target="_blank" rel="noopener">CV.pdf ↓</a>
+    <div class="nav__right">
+      <label class="a11y-toggle">
+        <input type="checkbox" id="a11y-toggle-input" aria-label="Activer le mode accessible : contraste élevé, texte agrandi, animations désactivées">
+        <span class="a11y-toggle-track" aria-hidden="true">
+          <span class="a11y-toggle-knob"></span>
+        </span>
+        <span class="a11y-toggle-text" aria-hidden="true">Mode accessible</span>
+      </label>
+      <a class="nav__cta" href="assets/CV_Bylel_Longelin.pdf" target="_blank" rel="noopener">CV.pdf ↓</a>
+    </div>
   </div>
 </header>
 
@@ -43,7 +54,7 @@
           <p class="line l2"><span class="out">Chargement du profil bylel-longelin.json…</span></p>
           <p class="line l3 assert-pass">BUT Informatique — IUT de Lens</p>
           <p class="line l4 assert-pass">1 an d'alternance QA chez Worldline</p>
-          <p class="line l5 assert-pass">Nombreux tests E2E automatisés (Cypress)</p>
+          <p class="line l5 assert-pass">200 tests E2E automatisés (Cypress)</p>
           <p class="line l6 assert-pass">17 000+ contrôles RGAA exécutés</p>
           <p class="line l7 assert-info">Montée en compétences sur Playwright…</p>
           <p class="line l8 assert-info">Préparation ISTQB Foundation…</p>
@@ -110,11 +121,11 @@
         <h3 class="case__title">it(<span class="str">'travaille comme QA Automation Tester Alternant'</span>)</h3>
         <p class="case__org">Equens Worldline · Seclin</p>
         <ul class="case__list">
-          <li>Conception et maintenance d'une suite de <strong>nombreux tests End-to-End</strong> automatisés avec Cypress / JavaScript, exécutée à chaque build via <strong>GitLab CI/CD</strong>.</li>
+          <li>Conception et maintenance d'une suite de <strong>200 tests End-to-End</strong> automatisés avec Cypress / JavaScript, exécutée à chaque build via <strong>GitLab CI/CD</strong>.</li>
           <li>Mise en place de tests fonctionnels et de non-régression, détectant <strong>80 anomalies</strong> avant leur mise en production.</li>
           <li>Audits d'accessibilité <strong>RGAA sur 5 clients</strong>, une soixantaine de pages et parcours, contrôles automatisés + vérifications manuelles.</li>
           <li>Exécution de plus de <strong>17 000 contrôles d'accessibilité</strong> et identification des défauts à corriger.</li>
-          <li>Formation de membres de l'équipe QA aux critères RGAA et aux outils d'audit.</li>
+          <li>Formation d'une dizaine de membres de l'équipe QA aux critères RGAA et aux outils d'audit.</li>
           <li>Suivi des anomalies et des campagnes de test dans un environnement <strong>Agile / Scrum</strong>.</li>
         </ul>
       </article>
